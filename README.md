@@ -1,62 +1,9 @@
-# Translation Website
-
-This project is a language translation website that allows users to select languages based on their region. It features a user-friendly interface for inputting text for translation and displays the translated output.
-
-## Features
-
-- **Language Selection**: Users can select a language based on their geographical region.
-- **Translation Input**: An input field for users to enter text for translation.
-- **Translation Output**: Displays the translated text after processing.
-- **Region Map**: A visual representation of regions and their corresponding languages.
-
-## Project Structure
-
-```
-translation-website
-├── src
-│   ├── components
-│   ├── services
-│   ├── types
-│   ├── utils
-│   ├── assets
-│   ├── App.tsx
-│   └── index.tsx
-├── public
-│   └── index.html
-├── package.json
-├── tsconfig.json
-├── .env
-└── README.md
-```
-
-## Installation
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd translation-website
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-
-To start the development server, run:
-```
-npm start
-```
-
-Open your browser and navigate to `http://localhost:3000` to view the application.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Verba AI - Intelligent Translation AssistantVerba AI is a modern, web-based translation tool that leverages the power of Google's Gemini API to provide intelligent, context-aware translations. It offers a seamless user experience with features like automatic language detection based on location, voice input/output, and live translation as you type.✨ Key FeaturesAI-Powered Translation: Utilizes the Gemini API for high-quality, nuanced translations that go beyond literal word-for-word conversion.Automatic Language Detection: Intelligently detects the user's country and state to suggest the most accurate local language for translation.Voice-to-Text & Text-to-Speech: Use your voice to dictate text for translation and listen to the translated output in the target language.Live Translation: Get instant translations in real-time as you type, without needing to click a button.Manual Language Selection: Full control to override the auto-detected languages and choose from a comprehensive list of source and target languages.Elegant & Responsive UI: A clean, modern, and animated interface that works beautifully on both desktop and mobile devices.Zero Installation: Runs directly in any modern web browser with no complex setup or dependencies.🚀 Tech StackFrontend: HTML5, CSS3 (with Tailwind CSS), and modern JavaScript (ES6+).Core APIs:Google Gemini API: For all translation and language detection tasks.Web Speech API: For browser-native speech recognition (voice-to-text) and synthesis (text-to-speech).Geolocation API: For automatic location-based language detection.📁 Project Structure.
+├── landing.html         # The animated landing page for the application
+├── landing.css          # Styles and animations for the landing page
+├── index.html           # The main translator application page
+├── style.css            # Styles for the main translator application
+├── config.js            # Configuration file for API keys and settings
+└── script.js            # Core application logic for all features
+🛠️ Setup and InstallationTo run Verba AI on your local machine, follow these simple steps.1. Get a Gemini API KeyThis project requires a Google Gemini API key to function.Go to the Google AI Studio.Sign in with your Google account.Click on "Create API key" and copy the generated key.2. Configure the ApplicationOpen the config.js file in the project directory.Find the following line:GEMINI_API_KEY: 'YOUR_GEMINI_API_KEY_HERE',
+Replace 'YOUR_GEMINI_API_KEY_HERE' with the API key you just copied.Save the config.js file.3. Run the ApplicationNo server or build process is needed!Simply open the landing.html file in a modern web browser like Chrome, Firefox, or Edge.The application will start, and you can navigate to the translator from the landing page.💡 How to UseStart on the Landing Page: Enjoy the welcome animation and click "Get Started" to move to the translator.Automatic Language Setup: The app will try to detect your location and set the target language automatically.Manual Language Selection: You can change the "From" (Source) and "To" (Target) languages at any time using the dropdown menus.Translate by Typing: Start typing in the left text box. The translation will appear on the right automatically after you stop typing.Translate by Voice:Click the microphone icon <i class="fas fa-microphone"></i>.Your browser will ask for permission to use your microphone. Click "Allow".Start speaking. The transcribed text will appear in the input box and be translated automatically.Listen to Translation: Click the speaker icon <i class="fas fa-volume-up"></i> in the output box to hear the translated text read aloud.This README provides everything needed to get Verba AI up and running.
